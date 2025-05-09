@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="" method="post">
+<form action="insert.php" method="post">
     
       <table>
         <tr>
