@@ -4,11 +4,12 @@ include_once 'koneksi.php';
 
 $id = $_POST['id'];
 $nama =$_POST['nama'];
-$rasa = $_POST['rasa'];
+$nama_makanan = $_POST['nama_makanan'];
+$jumlah = $_POST['jumlah'];
 
 
 try {
-    $koneksi->query("INSERT INTO buah (id, nama, rasa) VALUE ('$id', '$nama', '$rasa')");
+    $koneksi->query("INSERT INTO buah (id, nama, nama_makanan, jumlah) VALUE ('$id', '$nama', '$nama_makanan', '$jumlah')");
 
     header("location: tampil_data.php");
 
